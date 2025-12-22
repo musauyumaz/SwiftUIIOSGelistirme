@@ -29,3 +29,11 @@ var s1 = 80
 var s2 = 70
 
 var toplam = s1 + 50
+
+//Örnek 6 - Type Safety
+
+var sonuc = 100
+
+sonuc = 50
+
+//sonuc = "ahmet"
