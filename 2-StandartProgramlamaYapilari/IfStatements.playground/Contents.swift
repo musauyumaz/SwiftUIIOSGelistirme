@@ -59,3 +59,25 @@ let a = 10
 let b = 20
 
 a == b ? print("Eşit") : print("Eşit değil")
+
+//Alan
+print("Çember Alanı(1)")
+print("Dikdörtgen Alanı(2)")
+
+let secim = 1
+let kisaKenar = 10
+let uzunKenar = 20
+let yariCap = 4
+
+print("Seçiminiz : \(secim)")
+
+if secim == 2 {
+    print("Dikdörtgen Alanı")
+    print("Kısa Kenar : \(kisaKenar)")
+    print("Uzun Kenar : \(uzunKenar)")
+    print("Sonuç : \(kisaKenar * uzunKenar)")
+}else if secim == 1{
+    print("Çember Alanı")
+    print("Yarıçap : \(yariCap)")
+    print("Sonuç : \(3.14 * Double(yariCap) * Double(yariCap))")
+}
