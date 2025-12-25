@@ -33,3 +33,14 @@ case 3 : print("Çarpma \(sayi1 * sayi2)")
 case 4 : print("Bölme \(sayi1 / sayi2)")
 default : print("Böyle bir işlem yok")
 }
+
+
+let sayi = 10
+
+let sonuc = sayi % 2
+
+switch sonuc{
+case 0 : print("Çift Sayıdır")
+case 1 : print("Tek Sayıdır")
+default:print("Belirli Değil")
+}
