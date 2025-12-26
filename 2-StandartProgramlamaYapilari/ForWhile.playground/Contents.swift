@@ -51,3 +51,14 @@ while sayac > -1{
     print("Döngü 6 : \(sayac)")
     sayac -= 2
 }
+
+
+var name = "Ahmet Muhsin"
+
+for i in 1...5{
+    print("\(i). \(name)")
+}
+
+for i in 1...name.count{
+    print("\(i). \(name)")
+}
