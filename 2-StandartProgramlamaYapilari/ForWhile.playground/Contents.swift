@@ -18,3 +18,36 @@ while sayac < 3{
     print(sayac)
     sayac+=1
 }
+
+for i in 3...6{
+    print("Döngü 1 : \(i)")
+}
+
+sayac = 3
+while sayac < 7{
+    print("Döngü 2 : \(sayac)")
+    sayac += 1
+}
+
+
+for i in stride(from: 0, through: 8, by: 2){
+    print("Döngü 3 : \(i)")
+}
+
+
+sayac = 0
+while sayac < 9{
+    print("Döngü 4 : \(sayac)")
+    sayac += 2
+}
+
+for i in stride(from: 8, through: 0, by: -2){
+    print("DÖngü 5 : \(i)")
+}
+
+
+sayac  = 8
+while sayac > -1{
+    print("Döngü 6 : \(sayac)")
+    sayac -= 2
+}
