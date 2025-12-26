@@ -62,3 +62,10 @@ for i in 1...5{
 for i in 1...name.count{
     print("\(i). \(name)")
 }
+
+var veri = 5
+
+while veri > 0{
+    print("\(veri). veri")
+    veri -= 1
+}
