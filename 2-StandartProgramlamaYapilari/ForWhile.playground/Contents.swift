@@ -69,3 +69,7 @@ while veri > 0{
     print("\(veri). veri")
     veri -= 1
 }
+
+for i in 1...5{
+    
+}
