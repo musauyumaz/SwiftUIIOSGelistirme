@@ -141,3 +141,28 @@ if isimler.contains(kontrolIsim){
     print("Bulundu : \(kontrolIsim)")
 }
   
+//SET
+
+var set1 = Set<Int>()
+var set2: Set = ["Bursa", "İstanbul", "Ankara"]
+var set3: Set<Float> = [10.0, 20.0, 30.0]
+
+var meyvelerSet: Set = ["Çilek", "Muz", "Elma", "Kivi", "Kiraz"]
+
+for (index,meyve) in meyvelerSet.enumerated() {
+    print("\(index) - \(meyve)")
+}
+
+meyvelerSet.insert("Karpuz")
+meyvelerSet.insert("Armut")
+meyvelerSet.insert("Muz")
+
+meyvelerSet.isEmpty
+meyvelerSet.count
+meyvelerSet.first
+
+meyvelerSet.min()
+meyvelerSet.max()
+
+meyvelerSet.removeAll()
+
