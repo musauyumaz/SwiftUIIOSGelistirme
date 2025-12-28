@@ -131,3 +131,13 @@ for i in 0...notlar.count-1{
 }
 
 print("Ortalama : \(Double(totalNotlar) / Double(notlar.count))")
+
+//İsim Arama
+
+var isimler = ["Ahmet", "Mehmet", "Gençay", "Serhat", "Musa", "NazlıGül"]
+var kontrolIsim = "NazlıGül"
+
+if isimler.contains(kontrolIsim){
+    print("Bulundu : \(kontrolIsim)")
+}
+  
