@@ -90,3 +90,44 @@ for sayi in sayilar3.sorted(){
         tekler.append(sayi)
     }
 }
+
+//Rastgele Sayı Üretme
+
+var dizi = [Int]()
+var dizi22 = [Int]()
+
+for _ in 1...10{
+    dizi.append(Int.random(in: 1...9))
+    dizi22.append(Int(arc4random_uniform(10)))
+}
+
+dizi.sort()
+dizi22.sort()
+
+//Karne Uygulamasi
+
+var notlar = [Int]()
+var dersler = [String]()
+
+dersler.append("Tarih")
+notlar.append(20)
+
+dersler.append("Matematik")
+notlar.append(100)
+
+dersler.append("Fizik")
+notlar.append(80)
+
+dersler.append("Biyoloji")
+notlar.append(40)
+
+dersler.append("Kimya")
+notlar.append(63)
+
+var totalNotlar = 0
+for i in 0...notlar.count-1{
+    print("\(dersler[i]) : \(notlar[i])")
+    totalNotlar = totalNotlar + notlar[i]
+}
+
+print("Ortalama : \(Double(totalNotlar) / Double(notlar.count))")
