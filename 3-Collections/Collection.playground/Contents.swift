@@ -65,3 +65,12 @@ for s in sayilarOrtalama{
 print("Toplam \(total)")
 
 print("Ortalama : \(total / sayilarOrtalama.count)")
+
+
+//İçerik Değiştirme
+var sayilar2 = [1,2,3,4,5]
+
+for (i,s) in sayilar2.enumerated(){
+    sayilar2[i] = s * 2
+}
+print(sayilar2)
