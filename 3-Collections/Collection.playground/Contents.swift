@@ -53,3 +53,15 @@ print(sonuc2)
 var sonuc3 = sayilar.filter({$0 > 3 && $0<7})
 print(sonuc3)
 
+
+//Ortalama Hesaplama
+var sayilarOrtalama = [30,40,70,100,50,80,90,50,70,40]
+
+var total = 0
+for s in sayilarOrtalama{
+    total = total + s
+}
+
+print("Toplam \(total)")
+
+print("Ortalama : \(total / sayilarOrtalama.count)")
