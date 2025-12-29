@@ -240,3 +240,22 @@ print(sonuc13)
 
 var sonuc14 = okul.filter({$0.value == "Ahmet" && $0.key > 70})
 print(sonuc14)
+
+//Ornek Dictionary - Karne Uygulamasi
+var derslerNotlar = [String:Int]()
+derslerNotlar["Tarih"] = 23
+derslerNotlar["Fizik"] = 85
+derslerNotlar["Matematik"] = 100
+derslerNotlar["Kimya"] = 54
+derslerNotlar["Biyoloji"] = 49
+
+var toplamDersNot = 0
+
+for (ders,not) in derslerNotlar{
+    print("\(ders) : \(not)")
+    toplamDersNot = toplamDersNot + not
+}
+
+print("*****************")
+
+print("Ortalama \(Double(toplamDersNot) / Double(derslerNotlar.count))")
