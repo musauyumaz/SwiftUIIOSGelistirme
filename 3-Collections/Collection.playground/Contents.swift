@@ -227,3 +227,16 @@ var urunler = [String](urunFiyatlari.values)
 
 print(fiyatlar)
 print(urunler)
+
+//Dictionary Filtreleme
+
+var okul:[Int:String] = [154:"Ahmet", 67:"Mehmet", 871:"Zeynep", 45:"Ahmet"]
+
+var sonuc12 = okul.filter({$0.key > 70})
+print(sonuc12)
+
+var sonuc13 = okul.filter({$0.value == "Ahmet"})
+print(sonuc13)
+
+var sonuc14 = okul.filter({$0.value == "Ahmet" && $0.key > 70})
+print(sonuc14)
