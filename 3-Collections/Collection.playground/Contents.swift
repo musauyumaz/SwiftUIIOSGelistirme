@@ -166,3 +166,20 @@ meyvelerSet.max()
 
 meyvelerSet.removeAll()
 
+//Set Yapısına Özgü Metotlar
+
+let tekler1: Set = [1,3,5,7,9]
+let ciftler1: Set = [0,2,4,6,8]
+let asal:Set = [2,3,5,7,11]
+
+let dizi11 = tekler1.union(ciftler1).sorted()
+print(dizi11)
+
+let dizi12 = tekler1.intersection(asal).sorted()
+print(dizi12)
+
+let dizi13 = tekler1.subtracting(asal).sorted()
+print(dizi13)
+
+let dizi14 = tekler1.symmetricDifference(asal).sorted()
+print(dizi14)
