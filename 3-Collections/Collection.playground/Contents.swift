@@ -212,3 +212,18 @@ iller.count
 iller.first
 
 iller.reversed()
+
+
+var dersler1 = ["Kimya", "Matematik", "Edebiyat"]
+var notlar1 = [50,80,70]
+
+var dersNotlari = Dictionary(uniqueKeysWithValues: zip(dersler1, notlar1))
+
+print(dersNotlari)
+
+var urunFiyatlari :[Double:String] = [15.99 : "Kitap", 59.99:"T-Shirt", 239.99:"Saat"]
+var fiyatlar = [Double](urunFiyatlari.keys)
+var urunler = [String](urunFiyatlari.values)
+
+print(fiyatlar)
+print(urunler)
