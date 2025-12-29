@@ -183,3 +183,32 @@ print(dizi13)
 
 let dizi14 = tekler1.symmetricDifference(asal).sorted()
 print(dizi14)
+
+//DICTIONARY
+
+var dict1 = [Int:String]()
+var dict2 = [3.14:"Pi", 2.71:"e"]
+
+var dict3 :[Int:String] = [1:"Bir", 2:"İki", 3:"Üç"]
+
+var iller = [26:"Eskişehir", 34:"İstanbul", 6:"Ankara"]
+
+iller[35] = "İzmir"
+iller[10] = "Balıkesir"
+
+iller.updateValue("Yeni İzmir", forKey: 35)
+
+print(iller)
+
+for (anahtar, deger) in iller{
+    print("\(anahtar) - \(deger)")
+}
+
+
+iller.removeValue(forKey: 35)
+
+iller.isEmpty
+iller.count
+iller.first
+
+iller.reversed()
