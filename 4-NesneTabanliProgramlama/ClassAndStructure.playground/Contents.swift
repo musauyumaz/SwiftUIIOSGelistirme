@@ -44,3 +44,65 @@ print(tv.fiyat!)
 
 print(limuzin.renk!)
 print(limuzin.kapasite!)
+
+class Araba2{
+    var renk : String?
+    var hiz: Int?
+    var calisiyorMu: Bool?
+    
+    func calistir(){
+        calisiyorMu = true
+    }
+    
+    func durdur(){
+        calisiyorMu = false
+        hiz = 0
+    }
+    
+    func hizlan(kacKm: Int){
+        hiz! += kacKm
+        calisiyorMu = true
+    }
+    
+    func yavasla(kacKm: Int){
+        calisiyorMu = true
+        var km: Int = hiz! - kacKm
+        if hiz == 0 || hiz == nil || km <= 0{
+            hiz = 0
+        }else{
+            hiz! = km
+        }
+    }
+    
+    func bilgiAl(){
+        print("**********************************")
+        print("Renk : \(renk!)")
+        print("Hız : \(hiz!)")
+        print("Çalışıyormu : \(calisiyorMu!)")
+        print("**********************************")
+    }
+}
+
+var mercedes = Araba2()
+mercedes.hiz = 180
+mercedes.renk = "Kırmızı"
+mercedes.calistir()
+mercedes.bilgiAl()
+mercedes.durdur()
+mercedes.bilgiAl()
+mercedes.hizlan(kacKm: 50)
+mercedes.bilgiAl()
+mercedes.yavasla(kacKm: 20)
+mercedes.bilgiAl()
+
+
+var sahin = Araba2()
+sahin.renk = "Beyaz"
+sahin.hiz = 100
+sahin.calisiyorMu = true
+
+sahin.bilgiAl()
+
+sahin.calistir()
+sahin.hizlan(kacKm: 50)
+sahin.bilgiAl()
