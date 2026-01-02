@@ -143,3 +143,12 @@ kamilKoc.bilgiAl()
 kamilKoc.yolcuAl(yolcu: 15)
 kamilKoc.yolcuIndir(yolcu: 7)
 kamilKoc.bilgiAl()
+
+
+class Ornek{
+    lazy var no = 39
+}
+
+var nesne = Ornek()
+
+print(nesne.no)
